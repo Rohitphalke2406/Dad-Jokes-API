@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+    margin: 0;
+    background: linear-gradient(to left bottom,#C6EA8D , #FE90AF);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    background-color: rgba(255,255,255,.3);
+    padding: 20px;
+    box-shadow: 0 6px 10px rgba(0,0,0,.3);
+    border-radius: 35px 45px;
+    width: 85%;
+    text-align: center;
+    color: darkgreen;
+
+}
+
+.heading{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 5px 3px 2px grey;
+    letter-spacing: 2px;
+}
+
+.joke{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 40px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 2px 2px grey;
+    font-family: 'Merriweather', serif;
+}
+
+.btn{
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: bisque;
+    border-color: rgba(255,255,255,.6);
+    text-transform: uppercase;
+    width: 300px;
+    color: darkgreen;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.btn:hover{
+    background-color: rgba(255,255,255,.5);
+    box-shadow: 0 4px 4px rgba(0,0,0,.3);
+    transition: all 300ms ease;
+}
+
+
+.loading {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid lightcoral;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 47%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    display: none; 
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
